@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-size: 300% 300%;
+     background-image: linear-gradient(
+        -45deg, 
+        rgba(255, 181, 167, 1) 0%,
+        rgba(185, 251, 192, 1) 25%,
+        rgba(255, 175, 204, 1) 51%,
+        rgba(123, 223, 242, 1) 100%
+  );  
+  animation: AnimateBG 18s ease infinite;
+}
+
+@keyframes AnimateBG { 
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+#container {
+  position: absolute;
+  width: 50%;
+  min-width: 600px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: rgba(1, 0, 0, 0.1);
+  border: solid white 2px;
+  border-radius: 5px;
+  padding: 50px 10px;
+  display: grid;
+  justify-items: center;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+#guessedNumbers {
+    display: inline;
+    margin-top: 25px;
+}
+
+#guess {
+  font-size: 30px;
+}
+
+#numberShow {
+  margin-top: 30px;
+}
+
+#reactionText {
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+input[type="text"] {
+  width: 130px;
+  color: rgb(106, 106, 106);
+  padding: 15px 10px;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 3px solid black;
+  font-size: 22px;
+}
+
+button {
+  font-weight: bold;
+}
+
+#submit {
+  width: 120px;
+  height: 50px;
+  padding: 8px 0;
+  border-radius: 8px;
+  background-color: #FDE4CF;
+  border: 2px solid black;
+}
+
+#submit:hover {
+  background-color: #fec89a;
+}
+
+#playAgain {
+  width: 120px;
+  height: 50px;
+  padding: 8px 0;
+  border-radius: 8px;
+  border: 2px solid black;
+  background-color: #ffa6c1;
+}
+
+#playAgain:hover {
+  background-color: #ff5d8f;
+}
+
+footer {
+  font-weight: bold;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%
+}
